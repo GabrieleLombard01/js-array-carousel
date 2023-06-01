@@ -8,5 +8,16 @@
 /*Custom properties*/
 
 /*Generics*/
-
+img{
+    object-fit: contain;
+    height: 100%;
+}
 /*Utilties*/
+.container{
+    padding: 1rem;
+    margin: 2rem;
+    border: dashed black 1px;
+}
+.gallery{
+    height: 600px;
+}
