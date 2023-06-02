@@ -5,7 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*Custom properties*/
+/*PSEUDO-CLASSES*/
+#carousel .fa-solid:hover{
+    color: greenyellow;
+    text-shadow: white;
+}
 
 /*Generics*/
 img{
@@ -13,11 +17,14 @@ img{
 /*Utilties*/
 .container{
     padding: 1rem;
-    margin: 2rem;
+    margin: 100px auto 100px auto;
     border: dashed black 1px;
     max-width: 1000px;
 }
 /*Carousel content*/
+#carousel{
+    position: relative;
+}
 #carousel .gallery{
     height: 70vh;
 }
@@ -25,4 +32,22 @@ img{
     height: 70vh;
     width: 100%;
     object-fit: cover;
+}
+#carousel img.active{
+    display: block;
+}
+#carousel .fa-circle-chevron-left{
+    position: absolute;
+    left: 5px;
+    top: calc(100% / 2);
+    color: white;
+    cursor: pointer;
+}
+#carousel .fa-circle-chevron-right{
+    position: absolute;
+    right: 5px;
+    top: calc(100% / 2);
+    color: white;
+    cursor: pointer;
+
 }
