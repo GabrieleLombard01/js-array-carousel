@@ -22,7 +22,11 @@ imges[1].classList.add('active');
 rightBtn.addEventListener('click', function() {
 
     //Rimuovo class active all'img con l'indice corrente
-    imges[currentIndex].classList.remove('active');
+    imges[nowIndex].classList.remove('active');
 
     //Incremento l'indice corrente
+    nowIndex++;
+
+    //Aggiungo class active all'img con l'indice corrispondente
+    imges[nowIndex].classList.add('active');
 });
