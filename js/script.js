@@ -20,5 +20,9 @@ imges[1].classList.add('active');
 
 // ASCOLTO sul right-button:
 rightBtn.addEventListener('click', function() {
-    
+
+    //Rimuovo class active all'img con l'indice corrente
+    imges[currentIndex].classList.remove('active');
+
+    //Incremento l'indice corrente
 });
