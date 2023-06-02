@@ -22,22 +22,23 @@ Aggiungere la visualizzazione di tutte le thumbnails in basso o sulla destra del
 Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
 <hr>
 
-OPERAZIONI INIZIALI:
-	**Recupero prev e next
-	**RECUPERIAMO TUTTE LE IMMAGINI
-	**Preparo la gestione dell'indice dell'immagine
-	**Impostiamo la prima immagine come quella attiva (di partenza)
+**OPERAZIONI INIZIALI:**
+- Recupero prev e next
+- RECUPERIAMO TUTTE LE IMMAGINI
+- Preparo la gestione dell'indice dell'immagine
+- Impostiamo la prima immagine come quella attiva (di partenza)
 
-LOGICA DINAMICA:
-	**Metto in ascolto il next
-		- Se sono all'ultima immagine interrompo la funzione
-		- Rimuovo la classe active dell'immagine corrispondente al currentIndex
-		- Incremento il current index
-		- Aggiungo la classe active all'immagine corrispondente al nuovo currentIndex
-        
-	**Metto in ascolto il prev
-		- Se sono all'ultima immagine interrompo la funzione
-		- Rimuovo la classe active dell'immagine corrispondente al currentIndex
-		- Incremento il current index
-		- Controllo se il currentIndex è uguale a 0
+**LOGICA DINAMICA:**
+- Metto in ascolto il next
+	- Se sono all'ultima immagine interrompo la funzione
+	- Rimuovo la classe active dell'immagine corrispondente al currentIndex
+	- Incremento il current index
+	- Aggiungo la classe active all'immagine corrispondente al nuovo currentIndex
 
+- Metto in ascolto il prev
+	- Se sono all'ultima immagine interrompo la funzione
+	- Rimuovo la classe active dell'immagine corrispondente al currentIndex
+	- Incremento il current index
+	- Controllo se il currentIndex è uguale a 0
+
+<hr>
