@@ -20,6 +20,8 @@ imges[1].classList.add('active');
 
 // ASCOLTO sul right-button:
 rightBtn.addEventListener('click', function() {
+    //Se sono all'ultima immagine INTERROMPO
+    if (nowIndex === imges.lenght - 1) return;
 
     //Rimuovo class active all'img con l'indice corrente
     imges[nowIndex].classList.remove('active');
@@ -36,7 +38,7 @@ leftBtn.addEventListener('click', function() {
     //Controllo se l'indice corrente è uguale a 0
     if(!nowIndex) {
         return;
-    }
+    };
 
     //Rimuovo class active all'img con l'indice corrente
     imges[nowIndex].classList.remove('active');
