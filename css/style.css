@@ -61,9 +61,16 @@ img{
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
+    gap: 5px;
     align-items: center;
 }
 #grid-carous img{
     height: 100%;
+    width: 25%;
     object-fit: cover;
+    border-radius: 5px;
+    filter: grayscale(1);
+}
+#grid-carous img.active {
+    filter: grayscale(0);
 }

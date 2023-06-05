@@ -7,14 +7,21 @@ console.log('JS OK')
 const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
 
+//RECUPERO GRID-CAROUS
+const galleryCarous = document.getElementById('grid-carous');
+
 //RECUPERO le immagini
 const imges = document.querySelectorAll('#carousel img');
+
+//RECUPERO le GRID-IMGES
+const imgesGrid = document.querySelectorAll('#grid-carous img');
 
 //Preparo la gestione dell'indice delle immagini
 let nowIndex = 0;
 
 //IMG 1 - come attiva
 imges[nowIndex].classList.add('active');
+imgesGrid[nowIndex].classList.add('active');
 
 //! OPERAZIONI LOGICHE:
 
@@ -23,6 +30,7 @@ rightBtn.addEventListener('click', function() {
     
     //Rimuovo class active all'img con l'indice corrente
     imges[nowIndex].classList.remove('active');
+    imgesGrid[nowIndex].classList.remove('active');
 
     //Incremento l'indice corrente
     nowIndex++;
@@ -32,6 +40,7 @@ rightBtn.addEventListener('click', function() {
 
     //Aggiungo class active all'img con l'indice corrispondente
     imges[nowIndex].classList.add('active');
+    imgesGrid[nowIndex].classList.add('active');
 });
 
 
@@ -40,6 +49,7 @@ leftBtn.addEventListener('click', function() {
 
     //Rimuovo class active all'img con l'indice corrente
     imges[nowIndex].classList.remove('active');
+    imgesGrid[nowIndex].classList.remove('active');
 
     //Decremento l'indice corrente
     nowIndex--;
@@ -49,4 +59,5 @@ leftBtn.addEventListener('click', function() {
 
     //Aggiungo class active all'img con l'indice corrispondente
     imges[nowIndex].classList.add('active');
+    imgesGrid[nowIndex].classList.add('active');
 });
