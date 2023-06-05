@@ -12,15 +12,18 @@
 }
 
 /*Generics*/
-img{
+body{
+    background-color: black;
 }
 /*Utilties*/
 .container{
     padding: 1rem;
     margin: 100px auto 100px auto;
-    border: dashed black 1px;
     max-width: 1000px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
+
 /*Carousel content*/
 #carousel{
     position: relative;
@@ -33,6 +36,7 @@ img{
     width: 100%;
     object-fit: cover;
     display: none;
+    border-radius: 10px;
 }
 #carousel img.active{
     display: block;
