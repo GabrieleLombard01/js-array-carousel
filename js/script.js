@@ -20,31 +20,32 @@ imges[nowIndex].classList.add('active');
 
 // ASCOLTO sul right-button:
 rightBtn.addEventListener('click', function() {
-    //Se sono all'ultima immagine INTERROMPO
-    if (nowIndex === imges.length - 1 ) return;
-
+    
     //Rimuovo class active all'img con l'indice corrente
     imges[nowIndex].classList.remove('active');
 
     //Incremento l'indice corrente
     nowIndex++;
 
+    //Dopo aver incrementato vado oltre l'ultimo indice
+    if (nowIndex === imges.length) nowIndex = 0;
+
     //Aggiungo class active all'img con l'indice corrispondente
     imges[nowIndex].classList.add('active');
 });
 
+
 // ASCOLTO sul left-button:
 leftBtn.addEventListener('click', function() {
-    //Controllo se l'indice corrente è uguale a 0
-    if(!nowIndex) {
-        return;
-    };
 
     //Rimuovo class active all'img con l'indice corrente
     imges[nowIndex].classList.remove('active');
 
     //Decremento l'indice corrente
     nowIndex--;
+
+    //Dopo aver incrementato vado oltre l'ultimo indice
+    if (nowIndex < 0) nowIndex = imges.length - 1;
 
     //Aggiungo class active all'img con l'indice corrispondente
     imges[nowIndex].classList.add('active');
