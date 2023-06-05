@@ -14,14 +14,14 @@ const imges = document.querySelectorAll('#carousel img');
 let nowIndex = 0;
 
 //IMG 1 - come attiva
-imges[1].classList.add('active');
+imges[nowIndex].classList.add('active');
 
 //! OPERAZIONI LOGICHE:
 
 // ASCOLTO sul right-button:
 rightBtn.addEventListener('click', function() {
     //Se sono all'ultima immagine INTERROMPO
-    if (nowIndex === imges.lenght - 1) return;
+    if (nowIndex === imges.length - 1 ) return;
 
     //Rimuovo class active all'img con l'indice corrente
     imges[nowIndex].classList.remove('active');
